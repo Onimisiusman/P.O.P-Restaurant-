@@ -1,0 +1,711 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #fff5f2;
+
+    color: #131d50;
+}
+
+
+.navbar {
+    min-height: 50px;
+}
+
+
+/* P.O.P LOGO */
+
+.pop-logo {
+    font-size: 21px;
+
+    letter-spacing: -1px;
+}
+
+
+/* Logo colors */
+
+.pop-logo span:nth-child(1) {
+    color: #ff541b;
+}
+
+.pop-logo span:nth-child(2) {
+    color: #d86d8d;
+}
+
+.pop-logo span:nth-child(3) {
+    color: #1d1438;
+}
+
+
+/* NAV LINKS */
+
+.nav-link {
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color: #34343d !important;
+
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff541b !important;
+}
+
+
+/* ORDER BUTTON */
+
+.order-btn {
+    color: white;
+
+    border: none;
+
+    font-size: 10px;
+
+    background:
+        #ff541b;
+}
+
+.order-btn:hover {
+    color: rgb(151, 83, 6);
+
+    opacity: 0.9;
+}
+
+
+/* MOBILE NAV BUTTON */
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+.hero-section {
+    background: #fff5f2;
+}
+
+
+/* SMALL BADGES */
+
+.hero-section .badge,
+.menu-section .badge,
+.reviews-section .badge,
+.booking-section .badge,
+.order-section .badge {
+
+    color: #ff5a20;
+
+    background: #ffe1d3;
+
+    font-size: 7px;
+
+    letter-spacing: 1.3px;
+}
+
+
+/* HERO TITLE */
+
+.hero-title {
+    font-size: clamp(
+        55px,
+        6vw,
+        80px
+    );
+
+    letter-spacing: -4px;
+}
+
+
+/* GRADIENT TEXT */
+
+.hero-title span {
+
+    background:
+        linear-gradient(
+            90deg,
+            #c9441f,
+            #e25587,
+            #7654db
+        );
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* DESCRIPTION */
+
+.hero-description {
+    max-width: 440px;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    color: #495477;
+}
+
+
+.hero-image-container {
+
+    height: 100vh;
+    border-radius: 5px;
+
+}
+
+
+/*
+Bootstrap handles:
+
+img-fluid
+w-100
+h-100
+object-fit-cover
+
+So we don't need to manually write:
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+*/
+
+.hero-image {
+    min-height: 100%;
+}
+
+/* =====================================================
+            P.O.P EXPERIENCE SECTION
+===================================================== */
+
+.pop-experience {
+    background: #ffffff;
+}
+
+
+/* SECTION TITLE */
+
+.experience-title {
+    color: #101322;
+    letter-spacing: -2px;
+}
+
+
+/* SMALL GRADIENT LINE */
+
+.title-line {
+    width: 76px;
+    height: 5px;
+
+    margin-top: 15px;
+
+    border-radius: 20px;
+
+    background: 
+        #ff531b,
+        #e83f78,
+       
+    
+}
+
+
+/* DESCRIPTION */
+
+.experience-description {
+    max-width: 300px;
+
+    margin-left: auto;
+
+    color: #5c6483;
+
+    font-size: 10px;
+
+    line-height: 1.2;
+}
+
+
+/* IMAGE */
+
+.experience-image {
+    height: 285px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.experience-card {
+    overflow: hidden;
+}
+
+.experience-card:hover .experience-image {
+    transform: scale(1.03);
+}
+
+
+/* CARD TITLE */
+
+.experience-card h5 {
+    font-size: 14px;
+
+    color: #13172e;
+}
+
+
+/* CARD DESCRIPTION */
+
+.experience-card p {
+    font-size: 10px;
+
+    color: #474f77 !important;
+}
+
+
+/* =====================================================
+            GRADIENT CARD
+===================================================== */
+
+.experience-gradient-card {
+
+    min-height: 285px;
+
+    background: linear-gradient(
+        135deg,
+        #e16b73,
+        #7146ed
+    );
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.experience-gradient-card h5 {
+    font-size: 14px;
+}
+
+
+.experience-gradient-card p {
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* LIST */
+
+.experience-list {
+
+    margin-top: auto;
+
+    margin-bottom: 0;
+
+    padding-left: 18px;
+
+    font-size: 10px;
+
+    line-height: 2.2;
+}
+
+/* =====================================================
+                    MENU SECTION
+===================================================== */
+
+.menu-section {
+    background: #0c111f;
+    color: white;
+}
+
+
+/* MENU LABEL */
+
+.menu-label {
+    color: #ff7a00;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+/* MENU DESCRIPTION */
+
+.menu-section .text-secondary {
+    color: #444f6e !important;
+}
+
+
+/* MENU ITEM */
+
+.menu-item {
+    background: #181d2b;
+
+    border: 1px solid #303545;
+
+    transition: 0.3s ease;
+}
+
+
+/* FIRST CARD SLIGHTLY LIGHTER */
+
+.menu-item:first-child {
+    background: #252a38;
+}
+
+
+/* HOVER */
+
+.menu-item:hover {
+    transform: translateY(-3px);
+
+    border-color: #ec6708;
+}
+
+
+/* MENU TITLE */
+
+.menu-item h5 {
+    font-size: 14px;
+}
+
+
+/* PRICE */
+
+.menu-price {
+    color: #e78013;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+/* DESCRIPTION */
+
+.menu-item p {
+    font-size: 10px;
+}
+
+
+/* ORDER BUTTON */
+
+.order-menu-btn {
+    color: white;
+
+    font-size: 10px;
+
+    border: none;
+
+    background: 
+        #ff7100,
+       
+   
+}
+
+
+.order-menu-btn:hover {
+    color: white;
+
+    opacity: 0.9;
+}
+.testimonials {
+    background: #fdf6f2;
+    padding: 70px 0 76px;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+}
+
+.small-title {
+    color: #ff5a00;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 17px;
+}
+
+.section-heading h2 {
+    color: #07152e;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.testimonial-card {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 15px;
+    min-height: 205px;
+    padding: 27px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+}
+
+.stars {
+    color: #ff5a00;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.review {
+    color: #183153;
+    font-size: 12px;
+    line-height: 1.7;
+    min-height: 48px;
+    margin-bottom: 18px;
+}
+
+.testimonial-card hr {
+    border: 0;
+    border-top: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h6 {
+    color: #07152e;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.testimonial-card span {
+    color: #8d969f;
+    font-size: 7px;
+}
+
+
+.find-spot {
+    background: #fff;
+    padding: 80px 0;
+}
+
+.spot-label {
+    color: #ff5700;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+.find-spot h2 {
+    color: #07152e;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.spot-description {
+    color: #61708a;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.info-area {
+    margin-bottom: 30px;
+}
+
+.info-box {
+    margin-bottom: 25px;
+}
+
+.info-title {
+    color: #ff5700;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.info-box p:not(.info-title) {
+    color: #50617b;
+    font-size: 11px;
+    line-height: 1.7;
+    margin-bottom: 2px;
+}
+
+.info-box span {
+    color: #9aa3b0;
+    font-size: 10px;
+}
+
+.info-box a {
+    color: #50617b;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.spot-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.whatsapp-btn,
+.call-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    padding: 0 25px;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.whatsapp-btn {
+    background: #080f21;
+    color: #fff;
+}
+
+.call-btn {
+    border: 1px solid #080f21;
+    color: #080f21;
+    background: #fff;
+}
+
+.map-box {
+    height: 360px;
+    background: #ddd;
+    border: 7px solid #fdf6f2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.site-footer {
+    background: #080e1e;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    font-size: 18px;
+    font-weight: 800;
+    color: #ff5700;
+}
+
+.footer-logo span:nth-child(2) {
+    color: #6045ce;
+}
+
+.footer-logo span:nth-child(3) {
+    color: #5599eb;
+}
+
+.footer-content p {
+    color: #405279;
+    font-size: 8px;
+    letter-spacing: .5px;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #c5cad3;
+    font-size: 9px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .find-spot {
+        padding: 60px 20px;
+    }
+
+    .find-spot h2 {
+        font-size: 32px;
+    }
+
+    .map-box {
+        margin-top: 20px;
+        height: 300px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+}
+
+
+/* =====================================================
+                    MOBILE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .experience-description {
+
+        margin-left: 0;
+
+        margin-top: 15px;
+
+        max-width: 500px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .experience-title {
+
+        font-size: 38px;
+
+    }
+
+    .experience-image {
+
+        height: 260px;
+
+    }
+
+}
+
