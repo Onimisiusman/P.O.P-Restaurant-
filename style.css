@@ -9,12 +9,15 @@ body {
 
     font-family:
         Arial,
-        Helvetica,
         sans-serif;
 
     background: #fff5f2;
 
     color: #131d50;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 
@@ -23,7 +26,6 @@ body {
 }
 
 
-/* P.O.P LOGO */
 
 .pop-logo {
     font-size: 21px;
@@ -47,7 +49,6 @@ body {
 }
 
 
-/* NAV LINKS */
 
 .nav-link {
     font-size: 10px;
@@ -66,7 +67,7 @@ body {
 }
 
 
-/* ORDER BUTTON */
+
 
 .order-btn {
     color: white;
@@ -86,7 +87,7 @@ body {
 }
 
 
-/* MOBILE NAV BUTTON */
+
 
 .navbar-toggler {
     border: none;
@@ -102,7 +103,6 @@ body {
 }
 
 
-/* SMALL BADGES */
 
 .hero-section .badge,
 .menu-section .badge,
@@ -120,7 +120,9 @@ body {
 }
 
 
-/* HERO TITLE */
+
+
+
 
 .hero-title {
     font-size: clamp(
@@ -133,7 +135,6 @@ body {
 }
 
 
-/* GRADIENT TEXT */
 
 .hero-title span {
 
@@ -153,7 +154,6 @@ body {
 }
 
 
-/* DESCRIPTION */
 
 .hero-description {
     max-width: 440px;
@@ -193,16 +193,14 @@ object-fit: cover;
     min-height: 100%;
 }
 
-/* =====================================================
-            P.O.P EXPERIENCE SECTION
-===================================================== */
+
 
 .pop-experience {
     background: #ffffff;
 }
 
 
-/* SECTION TITLE */
+
 
 .experience-title {
     color: #101322;
@@ -210,7 +208,7 @@ object-fit: cover;
 }
 
 
-/* SMALL GRADIENT LINE */
+
 
 .title-line {
     width: 76px;
@@ -228,7 +226,7 @@ object-fit: cover;
 }
 
 
-/* DESCRIPTION */
+
 
 .experience-description {
     max-width: 300px;
@@ -243,7 +241,7 @@ object-fit: cover;
 }
 
 
-/* IMAGE */
+
 
 .experience-image {
     height: 285px;
@@ -256,7 +254,6 @@ object-fit: cover;
 }
 
 
-/* IMAGE HOVER */
 
 .experience-card {
     overflow: hidden;
@@ -267,7 +264,7 @@ object-fit: cover;
 }
 
 
-/* CARD TITLE */
+
 
 .experience-card h5 {
     font-size: 14px;
@@ -276,7 +273,7 @@ object-fit: cover;
 }
 
 
-/* CARD DESCRIPTION */
+
 
 .experience-card p {
     font-size: 10px;
@@ -285,9 +282,6 @@ object-fit: cover;
 }
 
 
-/* =====================================================
-            GRADIENT CARD
-===================================================== */
 
 .experience-gradient-card {
 
@@ -317,7 +311,7 @@ object-fit: cover;
 }
 
 
-/* LIST */
+
 
 .experience-list {
 
@@ -332,9 +326,6 @@ object-fit: cover;
     line-height: 2.2;
 }
 
-/* =====================================================
-                    MENU SECTION
-===================================================== */
 
 .menu-section {
     background: #0c111f;
@@ -342,7 +333,7 @@ object-fit: cover;
 }
 
 
-/* MENU LABEL */
+
 
 .menu-label {
     color: #ff7a00;
@@ -355,14 +346,13 @@ object-fit: cover;
 }
 
 
-/* MENU DESCRIPTION */
 
 .menu-section .text-secondary {
     color: #444f6e !important;
 }
 
 
-/* MENU ITEM */
+
 
 .menu-item {
     background: #181d2b;
@@ -373,14 +363,13 @@ object-fit: cover;
 }
 
 
-/* FIRST CARD SLIGHTLY LIGHTER */
+
 
 .menu-item:first-child {
     background: #252a38;
 }
 
 
-/* HOVER */
 
 .menu-item:hover {
     transform: translateY(-3px);
@@ -389,14 +378,12 @@ object-fit: cover;
 }
 
 
-/* MENU TITLE */
 
 .menu-item h5 {
     font-size: 14px;
 }
 
 
-/* PRICE */
 
 .menu-price {
     color: #e78013;
@@ -407,14 +394,14 @@ object-fit: cover;
 }
 
 
-/* DESCRIPTION */
+
 
 .menu-item p {
     font-size: 10px;
 }
 
 
-/* ORDER BUTTON */
+
 
 .order-menu-btn {
     color: white;
@@ -674,23 +661,23 @@ object-fit: cover;
 }
 
 
-/* =====================================================
-                    MOBILE
-===================================================== */
-
-@media (max-width: 991px) {
-
-    .experience-description {
-
-        margin-left: 0;
-
-        margin-top: 15px;
-
-        max-width: 500px;
-
-    }
+.hero-section.mobile{
+     background:
+        linear-gradient(
+            90deg,
+            #c9441f,
+            #e25587,
+            #7654db
+        );
 
 }
+
+
+
+
+
+
+
 
 
 @media (max-width: 576px) {
@@ -705,6 +692,89 @@ object-fit: cover;
 
         height: 260px;
 
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+   
+    .hero-image-container {
+        height: 600px;
+    }
+
+    .hero-image-container img {
+        height: 600px ;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    
+    /* .hero-section {
+        background: linear-gradient(
+            180deg,
+            #49323f 0%,
+            #ffe9e2 50%,
+            #ec6409 100%
+        );
+    } */
+
+     .experience-description {
+
+        margin-left: 0;
+
+        margin-top: 15px;
+
+        max-width: 500px;
+
+    }
+
+    .mobile-menu {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: 80px;
+    }
+
+    .menu-btn {
+        background: transparent;
+        border: 1px solid #101629;
+        color: #101629;
+        padding: 8px 12px;
+        font-size: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 42px;
+        right: 0;
+        width: 120px;
+        background: #eeeeee;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        z-index: 2000;
+    }
+
+    .mobile-menu:hover .dropdown {
+        display: block;
+    }
+
+    .dropdown a {
+        display: block;
+        padding: 13px 15px;
+        color: #dddadc;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .dropdown a:hover {
+        background: #afaeae;
+        color: white;
     }
 
 }
