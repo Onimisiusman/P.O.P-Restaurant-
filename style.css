@@ -734,7 +734,7 @@ object-fit: cover;
         display: block;
         position: relative;
         margin-left: auto;
-        margin-right: 80px;
+        margin-right: 20px;
     }
 
     .menu-btn {
@@ -742,7 +742,7 @@ object-fit: cover;
         border: 1px solid #101629;
         color: #101629;
         padding: 8px 12px;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: bold;
         cursor: pointer;
     }
