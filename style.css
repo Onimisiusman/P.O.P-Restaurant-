@@ -706,7 +706,11 @@ body {
         url("image/pop-hero-DptKlilt.jpg") no-repeat center center;
     }
 
-     .experience-description {
+    .lead.hero-description.mb-4 {
+        color: rgb(224, 224, 224);
+    }
+
+    .experience-description {
 
         margin-left: 0;
 
